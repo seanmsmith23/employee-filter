@@ -8,12 +8,7 @@ See data from `data/employees.rb` for an example of what the input should look l
 
 # Setup
 
-* Fork
-* Clone
-* Turn on TravisCI for the fork by
-  visiting https://travis-ci.org/profile/<github user name>, clicking the "Sync now" button
-  and scrolling down to find the repository to build.
-* Create a new branch for your work using `git checkout -b v1`
+* Fork and clone
 * Implement specs and code
 * Push using `git push -u origin v1`
 
