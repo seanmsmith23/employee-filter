@@ -8,11 +8,10 @@ class EmployeeFilter
 
   def started_before_2006
     date = Date.new(2006, 1, 1)
-    output = []
-    @employees.map do |hash|
-      output << hash if hash[:start_date] < date
+    @employees.select do |hash|
+      hash[:start_date] < date
     end
-    output
+
   end
 
   def all_with_start_date
