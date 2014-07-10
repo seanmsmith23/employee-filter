@@ -3,7 +3,7 @@ require "employee_filter"
 describe EmployeeFilter do
 
   before do
-    @employess = [
+    @employees = [
       {
         first_name: "Beaulah",
         last_name: "Thompson",
@@ -28,7 +28,7 @@ describe EmployeeFilter do
         start_date: Date.new(2005, 2, 9),
       }
 
-      expect(EmployeeFilter.new(@employees).started_before_2006).to eq(beaulah)
+      expect(EmployeeFilter.new(@employees).started_before_2006).to eq([beaulah])
     end
   end
 
